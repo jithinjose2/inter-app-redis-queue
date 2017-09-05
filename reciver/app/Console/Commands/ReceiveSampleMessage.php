@@ -6,23 +6,23 @@ use App\Services\RedisService;
 use Illuminate\Console\Command;
 use Illuminate\Queue\RedisQueue;
 
-class SendSampleMessage extends Command
+class ReceiveSampleMessage extends Command
 {
-    protected $name = 'messenger:recive';
+    protected $name = 'messenger:receive';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'messenger:recive';
+    protected $signature = 'messenger:receive';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Recive messages';
+    protected $description = 'Receive messages';
 
     /**
      * Create a new command instance.
